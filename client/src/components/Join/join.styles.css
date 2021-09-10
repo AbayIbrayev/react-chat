@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700;800;900&display=swap');
+
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
 }
@@ -9,11 +11,13 @@ body {
   height: 100vh;
 }
 
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
-.joinOuterContainer {
+.join__wrapper {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -22,33 +26,45 @@ body {
   background-color: #1a1a1d;
 }
 
-.joinInnerContainer {
-  width: 20%;
+.join__container {
+  width: 50%;
 }
 
-.joinInput {
-  border-radius: 0;
-  padding: 15px 20px;
+.join__input {
+  border-radius: 12px;
+  padding: 1rem 2rem;
   width: 100%;
+  max-width: 300px;
 }
 
-.heading {
+.join__heading {
   color: white;
   font-size: 2.5em;
   padding-bottom: 10px;
   border-bottom: 2px solid white;
 }
 
-.button {
+.join__text {
+  color: white;
+  font-size: 1.1em;
+}
+
+.join__button {
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
   background: #2979ff;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 12px;
   display: inline-block;
   border: none;
   width: 100%;
+  transition: 0.5s;
+  max-width: 300px;
+}
+
+.join__button:hover {
+  background: #004ac5;
 }
 
 .mt-20 {
@@ -63,8 +79,4 @@ body {
   .joinInnerContainer {
     width: 90%;
   }
-}
-
-button:focus {
-  outline: 0;
 }
